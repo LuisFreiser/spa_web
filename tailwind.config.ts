@@ -14,6 +14,9 @@ const config: Config = {
       },
     },
   },
+  safelist: [
+    "mt-20", // Agrega aquí cualquier clases CSS dinámicamente
+  ],
   plugins: [],
 };
 export default config;
