@@ -1,13 +1,15 @@
-import React from "react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className="p-5 mt-10 text-white bg-blue-950 md:px-20 md:py-10">
       <div className="grid md:grid-cols-[450px_1fr_1fr_1fr] md:gap-10">
         <div>
-          <img
+          <Image
             src="/assets/logo.png"
             alt="Logo Website"
+            width="200"
+            height="25"
             className="w-24 md:w-48"
           />
           <p className="mt-4">
