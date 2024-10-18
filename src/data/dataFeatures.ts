@@ -2,7 +2,7 @@ export const dataFeatures = [
   {
     id: 1,
     image: "medal",
-    text: "Galardonados como los Mejores",
+    text: "Premiados como los Mejores",
     additionalClass: "mt-0",
   },
   {
@@ -14,7 +14,7 @@ export const dataFeatures = [
   {
     id: 3,
     image: "calendar",
-    text: "Soporte 24/7 a tu disposición",
+    text: "Soporte 24/7 semanal",
     additionalClass: "mt-0",
   },
 ];
