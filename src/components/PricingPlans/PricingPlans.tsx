@@ -1,12 +1,12 @@
 import { dataPricePlans } from "@/data/dataPricePlans";
-import MotionTransitions from "../MotionTransitions/MotionTransitions";
+import { MotionTransitions_A } from "../MotionTransitions/MotionTransitions";
 
 export default function PricingPlans({ isMes }: { isMes: boolean }) {
   return (
     <div id="pricing" className="grid gap-10 my-5 md:grid-cols-3">
       {dataPricePlans.map(
         ({ id, name, description, primary, prices, features }) => (
-          <MotionTransitions key={id}>
+          <MotionTransitions_A key={id}>
             <div className="p-4 shadow-lg rounded-xl shadow-pink-100">
               <h4 className="mb-5 text-2xl font-bold text-center">{name}</h4>
               <p className="text-center">{description}</p>
@@ -33,7 +33,7 @@ export default function PricingPlans({ isMes }: { isMes: boolean }) {
                 </button>
               </div>
             </div>
-          </MotionTransitions>
+          </MotionTransitions_A>
         )
       )}
     </div>

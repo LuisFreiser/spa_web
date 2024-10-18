@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { dataFooters } from "@/data/dataFooters";
 
 export default function Footer() {
   return (
@@ -16,13 +17,16 @@ export default function Footer() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </div>
-        <div className="my-3">
-          <h4 className="text-xl font-bold text-white">Plataforma</h4>
-          <p className="my-4">Home</p>
-          <p className="my-4">Feature</p>
-          <p className="my-4">About</p>
-          <p className="my-4">Pricing</p>
-        </div>
+        {dataFooters.map(({ id, title, subtitle }) => (
+          <div className="my-3" key={id}>
+            <h4 className="text-xl font-bold text-white">{title}</h4>
+            {subtitle.map(({ id, name }) => (
+              <p key={id} className="my-4">
+                {name}
+              </p>
+            ))}
+          </div>
+        ))}
       </div>
     </footer>
   );

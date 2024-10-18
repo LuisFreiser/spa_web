@@ -1,12 +1,15 @@
 import Image from "next/image";
-import MotionTransitions from "../MotionTransitions/MotionTransitions";
+import { MotionTransitions_A } from "../MotionTransitions/MotionTransitions";
 
 export default function About() {
   return (
-    <div id="about" className="grid items-center py-20 md:grid-cols-2 lg:py-36">
-      <MotionTransitions>
+    <div
+      id="about"
+      className="grid items-center py-20 md:grid-cols-2 lg:pb-36 pt-36"
+    >
+      <MotionTransitions_A>
         <Image src="/assets/about.png" alt="About" width="600" height="400" />
-      </MotionTransitions>
+      </MotionTransitions_A>
       <div className="md:pr-20">
         <h2 className="mb-10 text-4xl font-extrabold">
           Hemos estado
