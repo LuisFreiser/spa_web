@@ -5,7 +5,7 @@ import PricingPlans from "@/components/PricingPlans/PricingPlans";
 export default function Pricing() {
   const [isMes, setIsMes] = useState(true);
   return (
-    <div id="pricing" className="py-20 md:py-36">
+    <div id="pricing" className="pb-36 dark:text-white">
       <h2 className="text-4xl font-bold text-center">
         Aqui tienes todos
         <br />
@@ -18,7 +18,7 @@ export default function Pricing() {
         vitae.
       </p>
       <div className="grid items-center justify-center max-w-sm grid-cols-3 mx-auto my-10 overflow-hidden">
-        <span className="text-xl font-bold text-center">Mensual</span>
+        <span className="text-xl font-bold text-center">Semanal</span>
         <div className="flex justify-center">
           <label className="relative inline-flex items-center mr-5 cursor-pointer">
             <input type="checkbox" className="sr-only peer" />
@@ -29,7 +29,7 @@ export default function Pricing() {
             />
           </label>
         </div>
-        <span className="text-xl font-bold text-center">Semanal</span>
+        <span className="text-xl font-bold text-center">Mensual</span>
       </div>
       <PricingPlans isMes={isMes} />
     </div>

@@ -5,12 +5,18 @@ export default function About() {
   return (
     <div
       id="about"
-      className="grid items-center py-20 md:grid-cols-2 lg:pb-36 pt-36"
+      className="grid items-center pb-36 px-10 md:grid-cols-2 dark:text-white"
     >
       <MotionTransitions_A>
-        <Image src="/assets/about.png" alt="About" width="600" height="400" />
+        <Image
+          src="/assets/about.png"
+          alt="About"
+          width="700"
+          height="500"
+          className="mx-auto"
+        />
       </MotionTransitions_A>
-      <div className="md:pr-20">
+      <div className="">
         <h2 className="mb-10 text-4xl font-extrabold">
           Hemos estado
           <br />

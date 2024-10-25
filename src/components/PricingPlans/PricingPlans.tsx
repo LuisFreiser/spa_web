@@ -3,7 +3,7 @@ import { MotionTransitions_A } from "../MotionTransitions/MotionTransitions";
 
 export default function PricingPlans({ isMes }: { isMes: boolean }) {
   return (
-    <div id="pricing" className="grid gap-10 my-5 md:grid-cols-3">
+    <div id="pricing" className="grid md:grid-cols-3 gap-10">
       {dataPricePlans.map(
         ({ id, name, description, primary, prices, features }) => (
           <MotionTransitions_A key={id}>
@@ -19,12 +19,21 @@ export default function PricingPlans({ isMes }: { isMes: boolean }) {
                   {isMes ? prices[0].name : prices[1].name}
                 </span>
               </div>
+
               {features.map(({ id, name, active }) => (
-                <div key={id} className="flex justify-center my-4">
-                  {active ? <CheckIcon /> : <CloseIcon />}
-                  <span className="ml-4">{name}</span>
+                <div
+                  key={id}
+                  className="grid grid-cols-4 justify-items-stretch my-4"
+                >
+                  <div className="justify-self-end">
+                    {active ? <CheckIcon /> : <CloseIcon />}
+                  </div>
+                  <span className="col-span-3 justify-self-start ml-2">
+                    {name}
+                  </span>
                 </div>
               ))}
+
               <div className="my-6 text-center">
                 <button
                   className={`px-8 py-3 rounded-xl ${primary ? "border-2 border-pink-400 text-pink-400 bg-white" : "text-white bg-pink-400"}`}

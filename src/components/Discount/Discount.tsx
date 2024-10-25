@@ -4,7 +4,7 @@ import { MotionTransitions_A } from "../MotionTransitions/MotionTransitions";
 export default function Discount() {
   return (
     <MotionTransitions_A>
-      <div className="grid items-center px-5 py-10 md:grid-cols-2 md:p-20 rounded-3xl bg-gradient-to-r from-violet-500 to-fuchsia-500">
+      <div className="grid items-center px-5 py-10 mb-10 rounded-3xl bg-gradient-to-r from-violet-500 to-fuchsia-500 md:grid-cols-2 md:p-20">
         <div>
           <h2 className="text-3xl font-extrabold text-white md:text-5xl">
             Puedes practicar a cualquier hora que te convenga

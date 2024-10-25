@@ -16,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
-      <body className={`${urbanist.className} antialiased`}>
+    <html lang="es" className="dark">
+      <body className={`${urbanist.className} antialiased dark:bg-slate-900`}>
         {children}
         <Footer />
       </body>

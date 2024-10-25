@@ -49,7 +49,7 @@ export const dataFooters = [
     subtitle: [
       {
         id: 1,
-        name: "S&VDesingWeb@gmail.com",
+        name: "S&VDesing@gmail.com",
       },
       {
         id: 2,

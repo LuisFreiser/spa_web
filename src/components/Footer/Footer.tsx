@@ -3,8 +3,8 @@ import { dataFooters } from "@/data/dataFooters";
 
 export default function Footer() {
   return (
-    <footer className="p-5 mt-10 text-white bg-blue-950 md:px-20 md:py-10">
-      <div className="grid md:grid-cols-[450px_1fr_1fr_1fr] md:gap-10">
+    <footer className="p-5 text-white bg-blue-950 md:py-10 lg:py-20 px-10">
+      <div className="grid grid-cols-2 gap-x-16 md:grid-cols-[350px_1fr_1fr_1fr] md:gap-10 lg:grid-cols-[550px_1fr_1fr_1fr]">
         <div>
           <Image
             src="/assets/logo.png"

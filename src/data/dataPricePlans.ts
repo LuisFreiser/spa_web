@@ -22,7 +22,7 @@ export const dataPricePlans: PricePlansData = [
     features: [
       {
         id: 1,
-        name: "Se envía mail gratis",
+        name: "Se envía mail gratis 24/7",
         active: true,
       },
       {
@@ -32,7 +32,7 @@ export const dataPricePlans: PricePlansData = [
       },
       {
         id: 3,
-        name: "Lorem ipsum lorem",
+        name: "200 GB storage",
         active: false,
       },
       {
@@ -68,7 +68,7 @@ export const dataPricePlans: PricePlansData = [
     features: [
       {
         id: 1,
-        name: "Se envía mail gratis",
+        name: "Se envía mail gratis 24/7",
         active: true,
       },
       {
@@ -78,7 +78,7 @@ export const dataPricePlans: PricePlansData = [
       },
       {
         id: 3,
-        name: "Lorem ipsum lorem",
+        name: "200 Gb storage",
         active: true,
       },
       {
@@ -114,7 +114,7 @@ export const dataPricePlans: PricePlansData = [
     features: [
       {
         id: 1,
-        name: "Se envía mail gratis",
+        name: "Se envía mail gratis 24/7",
         active: true,
       },
       {
@@ -124,7 +124,7 @@ export const dataPricePlans: PricePlansData = [
       },
       {
         id: 3,
-        name: "Lorem ipsum lorem",
+        name: "200 Gb storage",
         active: true,
       },
       {

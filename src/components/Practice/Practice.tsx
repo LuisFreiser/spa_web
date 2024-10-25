@@ -1,11 +1,11 @@
-import React from "react";
+import Image from "next/image";
 import { MotionTransitions_B } from "../MotionTransitions/MotionTransitions";
 
 export default function Practice() {
   return (
     <div
       id="practice"
-      className="grid items-center py-20 md:grid-cols-2 md:py-36"
+      className="grid items-center pb-36 px-10 md:grid-cols-2 dark:text-white"
     >
       <div className="md:pr-20">
         <h2 className="mb-10 text-4xl font-extrabold">
@@ -24,9 +24,16 @@ export default function Practice() {
       </div>
       <MotionTransitions_B>
         <div>
-          <video width="750" height="500" controls autoPlay muted loop>
+          <Image
+            src="/assets/practice.png"
+            alt="Practice"
+            width="350"
+            height="350"
+            className="mx-auto"
+          />
+          {/* <video width="750" height="500" controls autoPlay muted loop>
             <source src="/assets/business.mp4" type="video/mp4" />
-          </video>
+          </video> */}
         </div>
       </MotionTransitions_B>
     </div>
