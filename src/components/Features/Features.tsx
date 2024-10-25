@@ -6,7 +6,7 @@ export function Features() {
   return (
     <div
       id="features"
-      className="grid items-center gap-8 py-36 px-10 lg:grid-cols-4 dark:text-white"
+      className="grid items-center gap-8 pt-24 pb-36 md:py-36 px-10 lg:grid-cols-4 dark:text-white"
     >
       <div className="flex items-center justify-center">
         <h2 className="mb-4 text-4xl font-bold text-center">

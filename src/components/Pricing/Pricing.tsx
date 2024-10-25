@@ -5,7 +5,7 @@ import PricingPlans from "@/components/PricingPlans/PricingPlans";
 export default function Pricing() {
   const [isMes, setIsMes] = useState(true);
   return (
-    <div id="pricing" className="pb-36 dark:text-white">
+    <div id="pricing" className="pb-24 md:pb-36 dark:text-white">
       <h2 className="text-4xl font-bold text-center">
         Aqui tienes todos
         <br />

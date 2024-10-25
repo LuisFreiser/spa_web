@@ -29,7 +29,7 @@ export default function Practice() {
             alt="Practice"
             width="350"
             height="350"
-            className="mx-auto"
+            className="mx-auto pt-10"
           />
           {/* <video width="750" height="500" controls autoPlay muted loop>
             <source src="/assets/business.mp4" type="video/mp4" />
