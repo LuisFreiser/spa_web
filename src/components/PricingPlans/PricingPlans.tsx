@@ -3,11 +3,11 @@ import { MotionTransitions_A } from "../MotionTransitions/MotionTransitions";
 
 export default function PricingPlans({ isMes }: { isMes: boolean }) {
   return (
-    <div id="pricing" className="grid md:grid-cols-3 gap-10">
+    <div id="pricing" className="grid gap-10 md:grid-cols-3">
       {dataPricePlans.map(
         ({ id, name, description, primary, prices, features }) => (
           <MotionTransitions_A key={id}>
-            <div className="p-4 shadow-lg rounded-xl shadow-pink-100">
+            <div className="p-10 mx-10 shadow-lg rounded-xl shadow-pink-100 md:mx-0">
               <h4 className="mb-5 text-2xl font-bold text-center">{name}</h4>
               <p className="text-center">{description}</p>
 
