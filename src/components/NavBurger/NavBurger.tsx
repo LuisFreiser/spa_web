@@ -19,7 +19,7 @@ export default function NavBurger() {
         className="cursor-pointer lg:hidden"
       />
       <div
-        className={`fixed top-0 right-0 h-full w-64  bg-gradient-to-r from-purple-500 to-pink-400 shadow-lg transform ${isOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out lg:hidden z-50`}
+        className={`fixed top-0 right-0 h-full w-48 bg-gradient-to-r from-purple-500 to-pink-400 shadow-lg transform ${isOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out lg:hidden z-50`}
       >
         <div className="flex justify-end p-4">
           <Image
