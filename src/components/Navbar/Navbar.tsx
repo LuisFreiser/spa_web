@@ -35,7 +35,7 @@ export default function Navbar() {
         <button className="bg-pink-400 p-2 rounded-full hidden lg:block dark:text-white">
           <Image src="/svg/sol.svg" alt="Menu" width="25" height="25" />
         </button>
-        <NavBurger />
+        {/* <NavBurger /> */}
       </div>
     </div>
   );
