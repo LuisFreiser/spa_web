@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import NavBurger from "../NavBurger/NavBurger";
+// import NavBurger from "../NavBurger/NavBurger";
 
 export default function Navbar() {
   return (
