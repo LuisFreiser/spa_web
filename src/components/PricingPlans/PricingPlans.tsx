@@ -7,7 +7,7 @@ export default function PricingPlans({ isMes }: { isMes: boolean }) {
       {dataPricePlans.map(
         ({ id, name, description, primary, prices, features }) => (
           <MotionTransitions_A key={id}>
-            <div className="p-10 mx-10 shadow-lg rounded-xl shadow-pink-100 md:mx-0">
+            <div className="p-10 shadow-lg rounded-xl shadow-pink-100 md:mx-0">
               <h4 className="mb-5 text-2xl font-bold text-center">{name}</h4>
               <p className="text-center">{description}</p>
 

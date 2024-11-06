@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { MotionTransitions_B } from "../MotionTransitions/MotionTransitions";
+import { MotionTransitions_A } from "../MotionTransitions/MotionTransitions";
 
 export default function Practice() {
   return (
@@ -22,7 +22,7 @@ export default function Practice() {
           Empieza ya
         </button>
       </div>
-      <MotionTransitions_B>
+      <MotionTransitions_A>
         <div>
           <Image
             src="/assets/practice.png"
@@ -35,7 +35,7 @@ export default function Practice() {
             <source src="/assets/business.mp4" type="video/mp4" />
           </video> */}
         </div>
-      </MotionTransitions_B>
+      </MotionTransitions_A>
     </div>
   );
 }
