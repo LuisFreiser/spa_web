@@ -12,7 +12,7 @@ export default function Navbar() {
           alt="Logo S&V"
           width="200"
           height="25"
-          className="cursor-pointer lg:mx-0 min-w-[150px] h-auto" //min-w-[150px] permite que la imagen se adapte al tamaño en modo movil
+          className="cursor-pointer lg:mx-0 min-w-[150px] h-auto" //min-w-[150px] permite que la imagen se adapte al tamaño en vista movil
         />
       </div>
       <div className="flex justify-between font-bold">
