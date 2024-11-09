@@ -2,6 +2,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Menu } from "lucide-react";
+import DarkMode from "../DarkMode/DarkMode";
 
 export default function NavBurger() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,14 +12,7 @@ export default function NavBurger() {
 
   return (
     <div className="relative">
-      <Image
-        src="/svg/iconLight.svg"
-        alt="Menu"
-        width="32"
-        height="32"
-        onClick={toggleMenu}
-        className="cursor-pointer lg:hidden"
-      />
+      <Menu onClick={toggleMenu} className="cursor-pointer lg:hidden size-7" />
       <div
         className={`fixed top-0 right-0 h-full w-48 bg-gradient-to-r from-purple-500 to-pink-400 shadow-lg transform ${isOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out lg:hidden z-50`}
       >
@@ -47,9 +42,7 @@ export default function NavBurger() {
           <Link href="#pricing" className="text-lg hover:text-2xl transition">
             Pricing
           </Link>
-          <button className="bg-pink-400 p-2 rounded-full dark:text-white">
-            <Image src="/svg/sol.svg" alt="Menu" width="25" height="25" />
-          </button>
+          <DarkMode />
         </ul>
       </div>
       {isOpen && (

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import NavBurger from "../NavBurger/NavBurger";
+import DarkMode from "../DarkMode/DarkMode";
 
 export default function Navbar() {
   return (
@@ -11,7 +12,7 @@ export default function Navbar() {
           alt="Logo S&V"
           width="200"
           height="25"
-          className="cursor-pointer lg:mx-0"
+          className="cursor-pointer lg:mx-0 min-w-[150px] h-auto" //min-w-[150px] permite que la imagen se adapte al tamaño en modo movil
         />
       </div>
       <div className="flex justify-between font-bold">
@@ -32,9 +33,7 @@ export default function Navbar() {
         </Link>
       </div>
       <div className="flex justify-end">
-        <button className="bg-pink-400 p-2 rounded-full hidden lg:block dark:text-white">
-          <Image src="/svg/sol.svg" alt="Menu" width="25" height="25" />
-        </button>
+        <DarkMode classBtnDark="hidden bg-pink-400 p-2 rounded-full lg:block dark:text-white" />
         <NavBurger />
       </div>
     </div>
